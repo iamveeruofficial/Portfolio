@@ -35,7 +35,7 @@
                 <div class="header-wrapper">
 
                     <div class="header-left d-flex align-items-center">
-                        <div class="logo"><a href="index.html"><img src="assets/images/logo-light.png"
+                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png"
                                     alt="Naru Gopal"></a></div>
 
                     </div>
@@ -43,13 +43,13 @@
 
                         <nav class="mainmenunav d-none d-lg-block ml--50 navbar-example2">
                             <ul class="mainmenu nav nav-pills">
-                                <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a>
+                                <li class="nav-item"><a class="nav-link smoth-animation active scroll" href="#home">Home</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link smoth-animation" href="#about">About</a></li>
-                                <li class="nav-item"><a class="nav-link smoth-animation" href="#knowledge">Knowledge</a></li>
-                                <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a>
+                                <li class="nav-item"><a class="nav-link smoth-animation scroll" href="#about">About</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#knowledge">Knowledge</a></li> -->
+                                <li class="nav-item"><a class="nav-link smoth-animation scroll" href="#portfolio">Portfolio</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link smoth-animation" href="#contact">Contact</a>
+                                <li class="nav-item"><a class="nav-link smoth-animation scroll" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -410,10 +410,14 @@
                                                 <h4 class="title">Case Converter</h4>
                                             </div>
                                             <div class="portfolio_hover">
-                                                <p>Case Converter online text tool where you can change text case.</p>
+                                                <!-- <p>Case Converter online text tool where you can change text case.</p> -->
+                                                <div class="text-center">
+                                                    <a target="_blank" href="https://github.com/iamveeruofficial/caseconverter" class="btn btn-light rounded-pill"><i class="fab fa-github mr-1"></i> Github</a>
+                                                    <a target="_blank" href="https://narugopal-caseconverter.vercel.app/" class="btn btn-light rounded-pill"><i class="fas fa-desktop mr-1"></i> Demo</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div><a class="transparent_link" href="javascript:void(0)"></a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -436,10 +440,14 @@
                                                 </h4>
                                             </div>
                                             <div class="portfolio_hover">
-                                                <p>Todo App Tool where you save your all todos.</p>
+                                                <!-- <p>Todo App Tool where you save your all todos.</p> -->
+                                                <div class="text-center">
+                                                    <a target="_blank" href="https://github.com/iamveeruofficial/mern-todo" class="btn btn-light rounded-pill"><i class="fab fa-github mr-1"></i> Github</a>
+                                                    <a target="_blank" href="https://narugopal-todo.vercel.app/" class="btn btn-light rounded-pill"><i class="fas fa-desktop mr-1"></i> Demo</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div><a class="transparent_link" href="javascript:void(0)"></a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -554,7 +562,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="inner">
                             <div class="logo text-center text-sm-left mb_sm--20"><a href="index.html"><img
-                                        src="assets/images/logo-light.png" alt="Logo"></a></div>
+                                        src="assets/images/logo.png" alt="Logo"></a></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -618,6 +626,13 @@
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
     <!-- <script src="assets/js/pacman.js"></script> -->
+
+    <script>
+        $(".scroll").on('click', function () {
+					window.scroll({  top:$(this.hash).offset().top - 100});
+					return false;
+				});
+    </script>
 </body>
 
 </html>

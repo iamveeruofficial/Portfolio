@@ -1,23 +1,3 @@
-/*------------------------------------------------
-Template Name: Imroz - Html5 Agency & Portfolio Template
-All Main Js Here  
-
-Index All JS 
------------------------
-        01. Wow Active
-        02. Counter Up
-        03. Feature Icon Activation
-        04. Youtub Popup 
-        05. Slick Activation            
-        06. Paralax Window
-        07. LightBox
-        08. Parallax Activation
-        09. Masonry Activation
-        10. ScrollUp Activation
-        11. Mobile Menu Activation
-        12. Smoth Scroll
---------------------------------------------------*/
-
 (function (window, document, $, undefined) {
     'use strict';
 
